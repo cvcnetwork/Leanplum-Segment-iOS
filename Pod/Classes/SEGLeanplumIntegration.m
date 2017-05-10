@@ -36,6 +36,8 @@
         }
 
         if (isDevelopmentMode) {
+            NSLog(@"AppID is %@", appId);
+            NSLog(@"Token is %@", token);
             [Leanplum setAppId:appId withDevelopmentKey:token];
         } else {
             [Leanplum setAppId:appId withProductionKey:token];
